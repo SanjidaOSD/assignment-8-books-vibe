@@ -1,6 +1,7 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { saveReadBooksApplication } from "../../Utility/localstorage";
 
 
 
@@ -15,6 +16,7 @@ const handleWishlist = ()=>{
     toast('Books added to wishlist');
 }
 const handleRead = ()=>{
+    saveReadBooksApplication(book)
     toast('Books added to read list')
 }
 
@@ -45,11 +47,11 @@ const handleRead = ()=>{
                             </div>
                             <div className="flex justify-between items-center">
                                 <p>Publisher :</p>
-                                <p className="mr-24 text-xl font-bold"> {publisher}.</p>
+                                <p className="mr-40 text-xl font-bold"> {publisher}.</p>
                             </div>
                            <div className="flex justify-between items-center">
                            <p>Year of Publishing : </p>
-                            <p className="mr-[265px] text-xl font-bold">{yearOfPublishing}</p>
+                            <p className="mr-[275px] text-xl font-bold">{yearOfPublishing}</p>
                            </div>
                            <div className="flex justify-between items-center">
                            <p>Rating :</p>
@@ -57,7 +59,7 @@ const handleRead = ()=>{
                            </div>
                         </div>
                         <div className="mt-16">
-                            <button onClick={handleRead} className="bg-[#2a6e93] p-3 mr-8  rounded-xl text-white font-bold" to='/home'>Read...</button>
+                            <button onClick={handleRead} className="bg-[#2c7ba5] p-3 mr-8  rounded-xl text-white font-bold" to='/home'>Read...</button>
                             <button onClick={handleWishlist} className="bg-[#29769f] p-3 rounded-xl text-white font-bold" to='/home'>Wishlist</button>
                             <ToastContainer />
                         </div>

@@ -8,10 +8,10 @@ import { Link } from 'react-router-dom';
 const Book = ({ book }) => {
     const {bookId, bookName, author, image, category, rating} = book
     return (
-        <div>
+        <Link to={`/book/${bookId}`}>
 
             <div className="card h-auto bg-base-100 shadow-xl">
-                <figure><img src={image} alt="Shoes" /></figure>
+                <figure><img src={image} alt="Book" /></figure>
                 <div className="card-body">
                     <div className='justify-between mb-4'>
                         {/* <TagsComponent tags={book.tags} /> */}
@@ -32,11 +32,11 @@ const Book = ({ book }) => {
                         </div>
                     </div>
                 </div>
-                <Link to={`/book/${bookId}`}>
+                {/* <Link to={`/book/${bookId}`}>
                 <button className="btn btn-active btn-accent">View Details</button>
-                </Link>
+                </Link> */}
             </div>
-        </div>
+            </Link>
     );
 };
 
