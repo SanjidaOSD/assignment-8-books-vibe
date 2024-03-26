@@ -1,4 +1,7 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const BookDetails = () => {
@@ -6,8 +9,16 @@ const BookDetails = () => {
     const books = useLoaderData();
     const { bookId } = useParams();
     const book = books.find(book => book.bookId === bookId);
-    const { bookName, author, review, tags, totalPages, publisher, yearOfPublishing, rating, image, category } = book
-    // console.log(book);
+    const { bookName, author, review, totalPages, publisher, yearOfPublishing, rating, image, category } = book
+    
+const handleWishlist = ()=>{
+    toast('Books added to wishlist');
+}
+const handleRead = ()=>{
+    toast('Books added to read list')
+}
+
+
     return (
         <div>
             <div className="hero min-h-screen bg-base-200 rounded-2xl">
@@ -38,7 +49,7 @@ const BookDetails = () => {
                             </div>
                            <div className="flex justify-between items-center">
                            <p>Year of Publishing : </p>
-                            <p className="mr-[275px] text-xl font-bold">{yearOfPublishing}</p>
+                            <p className="mr-[265px] text-xl font-bold">{yearOfPublishing}</p>
                            </div>
                            <div className="flex justify-between items-center">
                            <p>Rating :</p>
@@ -46,8 +57,9 @@ const BookDetails = () => {
                            </div>
                         </div>
                         <div className="mt-16">
-                            <Link className="bg-[#2a6e93] p-3 mr-8  rounded-xl text-white font-bold" to='/home'>Read...</Link>
-                            <Link className="bg-[#29769f] p-3 rounded-xl text-white font-bold" to='/home'>Wishlist</Link>
+                            <button onClick={handleRead} className="bg-[#2a6e93] p-3 mr-8  rounded-xl text-white font-bold" to='/home'>Read...</button>
+                            <button onClick={handleWishlist} className="bg-[#29769f] p-3 rounded-xl text-white font-bold" to='/home'>Wishlist</button>
+                            <ToastContainer />
                         </div>
 
                     </div>
