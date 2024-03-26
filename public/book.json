@@ -1,7 +1,7 @@
 [
     {
         "bookId": "1",
-        "bookName": "The Secret Garden",
+        "bookName": "Termination Ploicy",
         "author": "Frances Hodgson Burnett",
         "image": "https://i.ibb.co/hX33588/istockphoto-1326062521-1024x1024.jpg",
         "review": "A heartwarming tale of friendship and renewal.",
@@ -10,15 +10,14 @@
         "category": "Fiction",
         "tags": [
             "Children's Literature",
-            "Classics",
-            "Gardens"
+            "Classics"
         ],
         "publisher": "Penguin Random House",
         "yearOfPublishing": 1911
     },
     {
         "bookId": "2",
-        "bookName": "The Hitchhiker's Guide to the Galaxy",
+        "bookName": "Happy",
         "author": "Douglas Adams",
         "image": "https://i.ibb.co/B48Hs93/josh-felise-y-IMy3-ERBc3o-unsplash.jpg",
         "review": "A hilarious journey through space with unforgettable characters.",
@@ -26,16 +25,17 @@
         "rating": 4.7,
         "category": "Science Fiction",
         "tags": [
-            "Satire",
-            "Adventure",
-            "British Humor"
+            "Roaring Twenties",
+            "Romance"
+            
+            
         ],
         "publisher": "Harmony Books",
         "yearOfPublishing": 1979
     },
     {
         "bookId": "3",
-        "bookName": "To Kill a Mockingbird",
+        "bookName": "Emergency Response Plan",
         "author": "Harper Lee",
         "image": "https://i.ibb.co/WyGRNxf/istockphoto-1402901711-1024x1024.jpg",
         "review": "An American classic that explores themes of justice and morality.",
@@ -44,15 +44,14 @@
         "category": "Fiction",
         "tags": [
             "Southern Gothic",
-            "Legal Drama",
-            "Civil Rights"
+            "Legal Drama"
         ],
         "publisher": "J. B. Lippincott & Co.",
         "yearOfPublishing": 1960
     },
     {
         "bookId": "4",
-        "bookName": "The Great Gatsby",
+        "bookName": "Toxic Work Culture",
         "author": "F. Scott Fitzgerald",
         "image": "https://i.ibb.co/kXWrcGc/istockphoto-1225640193-1024x1024.jpg",
         "review": "A tragic story of love, wealth, and the American Dream.",
@@ -60,16 +59,15 @@
         "rating": 4.6,
         "category": "Fiction",
         "tags": [
-            "Roaring Twenties",
-            "Classic Literature",
-            "Romance"
+            "Satire",
+            "Adventure"
         ],
         "publisher": "Charles Scribner's Sons",
         "yearOfPublishing": 1925
     },
     {
         "bookId": "5",
-        "bookName": "1984",
+        "bookName": "Write Idea",
         "author": "George Orwell",
         "image": "https://i.ibb.co/ySRz3Bf/aaron-burden-AXq-My8-MSSdk-unsplash.jpg",
         "review": "A dystopian masterpiece that remains relevant today.",
@@ -78,7 +76,6 @@
         "category": "Fiction",
         "tags": [
             "Dystopian",
-            "Totalitarianism",
             "Political Allegory"
         ],
         "publisher": "Secker & Warburg",
@@ -94,8 +91,7 @@
         "rating": 4.9,
         "category": "Fiction",
         "tags": [
-            "Romance",
-            "Regency Era",
+            "Regency",
             "Social Commentary"
         ],
         "publisher": "T. Egerton, Whitehall",
