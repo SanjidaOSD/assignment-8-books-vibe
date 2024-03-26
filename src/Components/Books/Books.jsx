@@ -15,9 +15,9 @@ useEffect(() =>{
     return (
         <div>
             <div className="mt-12">
-                <h1 className="text-4xl font-bold"> Books:{books.length}</h1>
+                <h1 className="text-4xl font-bold"> Books</h1>
             </div>
-            <div>
+            <div className="md:grid md:grid-cols-3 gap-4">
               {
                 books.map(book => <Book key={book.id} book={book}></Book>)
               }
