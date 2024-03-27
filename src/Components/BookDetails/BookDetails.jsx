@@ -13,6 +13,7 @@ const BookDetails = () => {
     const { bookName, author, review, totalPages, publisher, yearOfPublishing, rating, image, category } = book
     
 const handleWishlist = ()=>{
+    saveBookToLocalStorage(book)
     toast('Books added to wishlist');
 }
 const handleRead = ()=>{
@@ -25,9 +26,9 @@ const handleRead = ()=>{
         <div>
             <div className="hero min-h-screen bg-base-200 rounded-2xl">
                 <div className="hero-content flex-col lg:flex-row">
-                    <img className="w-[500px] h-[500px] rounded-3xl" src={image} />
-                    <div className="ml-16 text-left">
-                        <h1 className="text-5xl font-bold mb-4">{bookName}</h1>
+                    <img className="md:w-[500px] md:h-[500px] rounded-3xl" src={image} />
+                    <div className="md:ml-16 text-left">
+                        <h1 className="md:text-5xl font-bold mb-4">{bookName}</h1>
                         <p className="mb-4 justify-start">{author}</p>
                         <hr />
                         <p className="mb-4">{category}</p>
@@ -47,15 +48,15 @@ const handleRead = ()=>{
                             </div>
                             <div className="flex justify-between items-center">
                                 <p>Publisher :</p>
-                                <p className="mr-40 text-xl font-bold"> {publisher}.</p>
+                                <p className="md:mr-40 text-xl font-bold"> {publisher}.</p>
                             </div>
                            <div className="flex justify-between items-center">
                            <p>Year of Publishing : </p>
-                            <p className="mr-[275px] text-xl font-bold">{yearOfPublishing}</p>
+                            <p className="md:mr-[275px] text-xl font-bold">{yearOfPublishing}</p>
                            </div>
                            <div className="flex justify-between items-center">
                            <p>Rating :</p>
-                            <p className="mr-72 text-xl font-bold"> {rating}</p>
+                            <p className="md:mr-72 text-xl font-bold"> {rating}</p>
                            </div>
                         </div>
                         <div className="mt-16">

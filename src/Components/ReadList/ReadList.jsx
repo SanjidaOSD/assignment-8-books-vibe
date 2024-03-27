@@ -1,9 +1,30 @@
+import { useEffect, useState } from "react";
+import ShowReadList from "../ShowReadList/ShowReadList";
 
 
 const ReadList = () => {
+    const [bookList, setBookList] = useState([]);
+
+    // console.log(bookList);
+
+    useEffect(() => {
+
+        const getDefaultBook = JSON.parse(localStorage.getItem('books')) || [];
+        setBookList(getDefaultBook);
+
+    }, [])
+
+
     return (
         <div>
-            <h1> Read list</h1>
+            
+            <ul>
+              
+                {
+                    bookList.map(book => <ShowReadList key={book.bookId} book={book}></ShowReadList>)
+                }
+            </ul>
+
         </div>
     );
 };
