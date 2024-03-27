@@ -13,7 +13,7 @@ const Home = () => {
                     <img className="h-[394px]" src={BookImg} />
                     <div className="md:text-start">
                         <h1 className="text-5xl font-bold">Books to freshen up your bookshelf</h1>
-                        <Link to={'/list'} className="btn bg-green-600 mt-16 md:mt-28 text-white font-bold">View The List</Link>
+                        <Link to='/list' className="btn bg-green-600 mt-16 md:mt-28 text-white font-bold">View The List</Link>
                     </div>
                 </div>
             </div>

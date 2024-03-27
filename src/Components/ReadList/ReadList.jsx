@@ -3,7 +3,7 @@
 const ReadList = () => {
     return (
         <div>
-            <h1> Readdd listtt</h1>
+            <h1> Read list</h1>
         </div>
     );
 };
