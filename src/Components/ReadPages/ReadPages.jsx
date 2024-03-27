@@ -1,52 +1,51 @@
 
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
+
+const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
 
 
-
-import { Link } from 'react-router-dom';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Cell } from 'recharts';
-
-const ReadPages = () => {
-    const bookReadingData = [
-        { book: "Book A", pagesRead: 150 },
-        { book: "Book B", pagesRead: 220 },
-        { book: "Book C", pagesRead: 180 },
-        { book: "Book D", pagesRead: 300 },
-        { book: "Book E", pagesRead: 250 }
-    ];
-
-    const colors = ['#8884d8', '#82ca9d', '#ffc658', '#ff7300', '#00C49F'];
-
-    return (
-        <div className='items-center'>
-            
-            <BarChart
-                width={500}
-                height={300}
-                data={bookReadingData}
-                margin={{
-                    top: 20,
-                    right: 30,
-                    left: 20,
-                    bottom: 5,
-                }}
-            >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="book" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="pagesRead" fill="#8884d8">
-                    {bookReadingData.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
-                    ))}
-                </Bar>
-            </BarChart>
-
-            <div className="mt-6">
-                <Link  className="bg-green-600 p-3 rounded-xl text-white font-bold" to='/home'>Go back to Home</Link>
-            </div>
-        </div>
-    );
+const bookReadingData = [
+            { book: "Termination", pagesRead: 150 },
+            { book: " Happy", pagesRead: 220 },
+            { book: "Emergency", pagesRead: 180 },
+            { book: "Toxic W.C", pagesRead: 300 },
+            { book: "Write Idea", pagesRead: 250 }
+        ];
+const getPath = (x, y, width, height) => {
+  return `M${x},${y + height}C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3}
+  ${x + width / 2}, ${y}
+  C${x + width / 2},${y + height / 3} ${x + (2 * width) / 3},${y + height} ${x + width}, ${y + height}
+  Z`;
 };
 
-export default ReadPages;
+const TriangleBar = (props) => {
+  const { fill, x, y, width, height } = props;
+
+  return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
+};
+
+export default function App() {
+
+  return (
+    <BarChart
+      width={500}
+      height={300}
+      data={bookReadingData}
+      margin={{
+        top: 20,
+        right: 30,
+        left: 20,
+        bottom: 5,
+      }}
+    >
+      <CartesianGrid strokeDasharray="3 3" />
+      <XAxis dataKey="book" />
+      <YAxis dataKey='' />
+      <Bar dataKey="pagesRead" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
+        {bookReadingData.map((entry, index) => (
+          <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+        ))}
+      </Bar>
+    </BarChart>
+  );
+}

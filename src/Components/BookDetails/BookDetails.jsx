@@ -1,7 +1,7 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { saveReadBooksApplication } from "../../Utility/localstorage";
+import { saveBookToLocalStorage } from "../../Utility/localstorage";
 
 
 
@@ -16,7 +16,7 @@ const handleWishlist = ()=>{
     toast('Books added to wishlist');
 }
 const handleRead = ()=>{
-    saveReadBooksApplication(book)
+   saveBookToLocalStorage(book)
     toast('Books added to read list')
 }
 

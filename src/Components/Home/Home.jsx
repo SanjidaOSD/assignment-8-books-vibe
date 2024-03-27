@@ -4,6 +4,7 @@ import BookImg from "../../assets/book.jpg";
 import Books from "../Books/Books";
 
 
+
 const Home = () => {
     return (
         <div>
@@ -18,6 +19,7 @@ const Home = () => {
             </div>
 
             <Books></Books>
+           
 
         </div>
 

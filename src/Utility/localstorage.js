@@ -1,17 +1,16 @@
-const getStoredBookApplication = () => {
-    const storedBookApplication = localStorage.getItem('book-applications');
-    if (storedBookApplication) {
-        return JSON.parse(storedBookApplication);
-    }
-    return [];
-}
 
-const saveReadBooksApplication = id => {
-    const storedBookApplication = getStoredBookApplication();
-    const exists = storedBookApplication.find(booksId => booksId === id);
-    if (!exists) {
-        storedBookApplication.push(id);
-        localStorage.setItem('book-applications',JSON.stringify(storedBookApplication))
-    }
+
+
+export const saveBookToLocalStorage = (book) =>{
+    const saveReadBooks = JSON.parse(localStorage.getItem('books')) || [];
+   const readBooks = saveReadBooks.find(item => item.bookId == book.bookId);
+   
+   if(readBooks){
+    alert('Books all ready added....')
+   }
+   else{
+    saveReadBooks.push(book)
+    localStorage.setItem('books', JSON.stringify(saveReadBooks));
+   }
+   
 }
-export { getStoredBookApplication, saveReadBooksApplication }

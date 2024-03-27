@@ -13,6 +13,8 @@ import ReadPages from './Components/ReadPages/ReadPages.jsx';
 import Blogs from './Components/Blogs/Blogs.jsx';
 import ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
 import BookDetails from './Components/BookDetails/BookDetails.jsx';
+import BookList from './Components/BookList/BookList.jsx';
+import WishList from './Components/WishList/WishList.jsx';
 
 
 
@@ -47,7 +49,16 @@ const router = createBrowserRouter([
         path:'/list',
         element:<ListedBooks></ListedBooks>,
         loader:() => fetch('/book.json')
-      }
+      },
+      {
+        path:"/readList",
+        element: <BookList></BookList>
+      },
+      {
+        path:'/wishList',
+        element:<WishList></WishList>
+      },
+      
     ]
   },
 ]);
