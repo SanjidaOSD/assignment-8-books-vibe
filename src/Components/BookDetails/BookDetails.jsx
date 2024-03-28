@@ -48,7 +48,7 @@ const handleRead = ()=>{
                             </div>
                             <div className="flex justify-between items-center">
                                 <p>Publisher :</p>
-                                <p className="md:mr-40 text-xl font-bold"> {publisher}.</p>
+                                <p className="md:mr-36 text-xl font-bold"> {publisher}.</p>
                             </div>
                            <div className="flex justify-between items-center">
                            <p>Year of Publishing : </p>
