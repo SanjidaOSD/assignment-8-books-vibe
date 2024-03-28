@@ -11,7 +11,7 @@ const Book = ({ book }) => {
         <Link to={`/book/${bookId}`}>
 
             <div className="card h-auto bg-base-100 shadow-xl">
-                <figure><img src={image} alt="Book" /></figure>
+                <figure><img className='h-[230px] w-[326px]' src={image} alt="Book" /></figure>
                 <div className="card-body">
                     <div className='justify-between mb-4'>
                         {/* <TagsComponent tags={book.tags} /> */}
@@ -32,9 +32,7 @@ const Book = ({ book }) => {
                         </div>
                     </div>
                 </div>
-                {/* <Link to={`/book/${bookId}`}>
-                <button className="btn btn-active btn-accent">View Details</button>
-                </Link> */}
+                
             </div>
             </Link>
     );

@@ -18,7 +18,7 @@
     {
         "bookId": "2",
         "bookName": "Happy",
-        "author": "Alex Lemon",
+        "author": "Alex Lemon lee",
         "image": "https://i.ibb.co/B48Hs93/josh-felise-y-IMy3-ERBc3o-unsplash.jpg",
         "review":  "Harper Lee's 'To Kill a Mockingbird' is a masterpiece of American literature. Through the eyes of young Scout Finch, Lee explores themes of racial injustice, moral growth, and the importance of empathy. The novel's enduring relevance makes it essential reading for all generations.",
         "totalPages": 200,
@@ -30,13 +30,13 @@
             
             
         ],
-        "publisher": "Harmony Books",
+        "publisher": "Penguin Random House",
         "yearOfPublishing": 1979
     },
     {
         "bookId": "3",
         "bookName": "Emergency Response",
-        "author": "Harper Lee",
+        "author": "Harper lemon Lee",
         "image": "https://i.ibb.co/WyGRNxf/istockphoto-1402901711-1024x1024.jpg",
         "review":"George Orwell's '1984' is a chilling dystopian novel that warns of the dangers of totalitarianism and the erosion of individual freedoms. With its grim portrayal of a surveillance state and thought control, '1984' remains a stark reminder of the perils of unchecked power.",
         "totalPages": 336,
@@ -46,13 +46,13 @@
             "Southern Gothic",
             "Legal Drama"
         ],
-        "publisher": "J. B. Lippincott & Co.",
+        "publisher": "Jo. Bi. Lippincott & Co.",
         "yearOfPublishing": 1960
     },
     {
         "bookId": "4",
         "bookName": "Toxic Work Culture",
-        "author": "F. Scott Fitzgerald",
+        "author": "F. Scott. Fitzgerald",
         "image": "https://i.ibb.co/kXWrcGc/istockphoto-1225640193-1024x1024.jpg",
         "review": "Douglas Adams' 'The Hitchhiker's Guide to the Galaxy' is a hilarious romp through space that combines absurd humor with philosophical musings. With its quirky characters and witty dialogue, it's a delightful read for anyone in need of an intergalactic adventure.",
         "totalPages": 218,
@@ -68,7 +68,7 @@
     {
         "bookId": "5",
         "bookName": "Write Idea",
-        "author": "George Orwell",
+        "author": " Alex George Orwell",
         "image": "https://i.ibb.co/ySRz3Bf/aaron-burden-AXq-My8-MSSdk-unsplash.jpg",
         "review": "Jane Austen's 'Pride and Prejudice' is a timeless romance that captivates readers with its wit, charm, and astute social commentary. The lively dynamics between Elizabeth Bennet and Mr. Darcy, set against the backdrop of Regency-era England, make it a beloved classic for all ages",
         "totalPages": 328,
@@ -78,14 +78,14 @@
             "Dystopian",
             "Political Allegory"
         ],
-        "publisher": "Secker & Warburg",
+        "publisher": "Penguin Random House",
         "yearOfPublishing": 1949
     },
     {
         "bookId": "6",
-        "bookName": "Pride and Prejudice",
-        "author": "Jane Austen",
-        "image": "https://i.ibb.co/hX33588/istockphoto-1326062521-1024x1024.jpg",
+        "bookName": "Your soul",
+        "author": "Jane Austen lee",
+        "image": "https://i.ibb.co/c1GHh8v/thought-catalog-Dx-Az-OKSi-Po-E-unsplash.jpg",
         "review": "Frances Hodgson Burnett's 'The Secret Garden' is a heartwarming tale of growth, healing, and the transformative power of nature. Through the discovery of a hidden garden, protagonist Mary Lennox learns the importance of friendship, perseverance, and the beauty of the natural world",
         "totalPages": 432,
         "rating": 4.9,
@@ -94,7 +94,7 @@
             "Regency",
             "Social Commentary"
         ],
-        "publisher": "T. Egerton, Whitehall",
+        "publisher": "Penguin Random House",
         "yearOfPublishing": 1813
     }
 ]
