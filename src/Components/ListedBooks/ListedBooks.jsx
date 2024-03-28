@@ -9,10 +9,8 @@ const ListedBooks = () => {
 
     const [tabIndex, setTabIndex] = useState(0);
 
-
-
     return (
-        <div>
+        <div className="mb-16">
             <div className="border-2 font-bold text-2xl p-4 bg-slate-200 rounded-full mt-4 mb-4">
                 <h1>Books</h1>
             </div>
@@ -27,9 +25,6 @@ const ListedBooks = () => {
                 </ul>
             </details>
 
-           
-
-            {/* <button className="btn bg-green-500">Sort By<IoIosArrowDown /></button> */}
 
             <div role="tablist" className="text-left tabs-lifted">
                 <Link

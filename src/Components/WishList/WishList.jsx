@@ -17,7 +17,7 @@ const WishList = () => {
 
     return (
         <div>
-            <h2>This is WishList</h2>
+        
             {
                 bookList.map(book => <ShowWishList key={book.bookId} book={book}></ShowWishList>)
             }
