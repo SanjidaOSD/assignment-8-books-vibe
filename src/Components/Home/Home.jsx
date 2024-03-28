@@ -19,11 +19,7 @@ const Home = () => {
             </div>
 
             <Books></Books>
-           
-
         </div>
-
-
     );
 };
 
