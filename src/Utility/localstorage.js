@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 
 
 
@@ -6,7 +7,7 @@ export const saveBookToLocalStorage = (book) =>{
    const readBooks = saveReadBooks.find(item => item.bookId == book.bookId);
    
    if(readBooks){
-    alert('Books all ready added..')
+    toast('Books all ready added..')
    }
    else{
     saveReadBooks.push(book)
