@@ -17,7 +17,19 @@ const ListedBooks = () => {
                 <h1>Books</h1>
             </div>
 
-            <button className="btn bg-green-500">Sort By<IoIosArrowDown /></button>
+
+            <details className="dropdown">
+                <summary className="m-1 btn bg-green-500">Sort By<IoIosArrowDown /></summary>
+                <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 text-center">
+                    <li><a>Rating</a></li>
+                    <li><a>Number of Pages</a></li>
+                    <li><a>Publisher year</a></li>
+                </ul>
+            </details>
+
+           
+
+            {/* <button className="btn bg-green-500">Sort By<IoIosArrowDown /></button> */}
 
             <div role="tablist" className="text-left tabs-lifted">
                 <Link
@@ -27,7 +39,7 @@ const ListedBooks = () => {
                     to={'wish'}
                     onClick={() => setTabIndex(1)}
                     role="tab" className={`tab font-bold ${tabIndex === 1 ? 'tab-active' : 'tab'}`}>Wish List</Link>
-           <Outlet></Outlet>
+                <Outlet></Outlet>
             </div>
             <div className="mt-6">
                 <Link className="bg-green-600 p-3 rounded-xl text-white font-bold" to='/home'>Go back to Home</Link>
